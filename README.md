@@ -36,7 +36,7 @@ Use the following commands to compile the respective programs:
 
 ### 1. Reverse Engineering ELF Binary (elf_analysis.c)
 Execute the target program to generate the baseline output:
-./elf
+* ./elf
 
 To perform static analysis on the stripped binary:
 * readelf -a elf
@@ -46,24 +46,24 @@ To trace system calls and runtime behavior:
 * strace ./elf
 * gdb ./elf
 
-### 2. x86_64 Assembly File Processor (temp_proc.asm)
+### 2. x86_64 Assembly File Processor (temperature.asm)
 Before running, ensure a sample data file named **temperature_data.txt** is located in the same directory:
-echo -e "22.5\n\n23.1\n21.8\n" > temperature_data.txt
+* echo -e "22.5\n\n23.1\n21.8\n" > temperature_data.txt
 
 Execute the assembly program to process the file and output the counts:
-./temp_proc
+* ./temp_proc
 
 ### 3. Python C-Extension (vibration.c)
 Execute the Python test script, which imports the compiled C module and passes it a tuple of floating-point data:
-python3 test_vibration.py
+* python3 test_vibration.py
 
-### 4. Baggage Handling Simulation (baggage_system.c)
+### 4. Baggage Handling Simulation (baggage_handler.c)
 Execute the multithreaded baggage loader and aircraft consumer simulation:
-./baggage_system
+* ./baggage_handler
 
-### 5. Digital Library TCP Server (server.c / client.c)
+### 5. Digital Library TCP Server (server.c & client.c)
 Start the library server first to listen for incoming connections:
-./server
+* ./server
 
 In a separate terminal (or multiple terminals to test concurrency), run the client to authenticate and reserve books:
-./client
+* ./client
