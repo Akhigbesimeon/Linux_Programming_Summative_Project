@@ -67,3 +67,8 @@ Start the library server first to listen for incoming connections:
 
 In a separate terminal (or multiple terminals to test concurrency), run the client to authenticate and reserve books:
 * ./client
+
+### Active User Library IDs
+* LIB101
+* LIB102
+* LIB103
